@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="parallel" parallel="tests" thread-count="2" verbose="2">
+    <test name="test with firefox">
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name="com.techproed.seleniumPractice.day5"></package>
+        </packages>
+    </test>
+    <test name="test with chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="com.techproed.seleniumPractice.day5"></package>
+        </packages>
+    </test>
+</suite>
